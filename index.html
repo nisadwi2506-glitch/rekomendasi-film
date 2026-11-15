@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#081329">
+    <title>Rekomendasi Film</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h1>FILM</h1>
+
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#film">Film</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+                <h2>
+                    Temukan Cerita,<br>
+                    <span>Nikmati Setiap Film</span>
+                </h2>
+
+                <p>
+                    Jelajahi berbagai pilihan film menarik dari beragam genre
+                    dan temukan tontonan yang sesuai dengan seleramu
+                </p>
+            </div>
+
+            <div class="hero-posters">
+
+                <div class="hero-poster poster-a">
+                    <img src="batman.jpg" alt="The Batman">
+                </div>
+
+                <div class="hero-poster poster-b">
+                    <img src="toy-strory.jpg" alt="Toy Story">
+                </div>
+
+                <div class="hero-poster poster-c">
+                    <img src="teach-you-a-lesson.jpg" alt="Teach You a Lesson">
+                </div>
+
+                <div class="hero-poster poster-d">
+                    <img src="final-destination-background.jpg" alt="Final Destination">
+                </div>
+
+                <div class="hero-poster poster-e">
+                    <img src="spider-man-into-the-spider-verse.jpg" alt="Spider-Man">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- REKOMENDASI FILM -->
+        <section class="film-section" id="film">
+
+            <div class="film-heading-row">
+
+                <div class="search-wrapper">
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="🔎 Cari judul film..."
+                        autocomplete="off"
+                        aria-label="Cari judul film">
+
+                    <div
+                        id="searchSuggestions"
+                        class="search-suggestions">
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <select id="genre" aria-label="Pilih genre">
+                        <option value="all">Semua Genre</option>
+                        <option value="aksi">Aksi</option>
+                        <option value="komedi">Komedi</option>
+                        <option value="romansa">Romansa</option>
+                        <option value="animasi">Animasi</option>
+                        <option value="horor">Horor</option>
+                        <option value="misteri">Misteri</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- DAFTAR FILM -->
+            <div class="film-container" id="filmContainer">
+
+                <!-- FILM 1 -->
+                <div class="film-card" data-title="A Korean Odyssey" data-genre="romansa,horor" data-year="2017">
+                    <div class="poster">
+                        <img src="a-korean-odyssey.jpg" alt="Poster A Korean Odyssey">
+                    </div>
+                    <div class="film-info">
+                        <h3>A Korean Odyssey</h3>
+                        <p>Romansa • Horor</p>
+                        <span>⭐ 7.9/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 2 -->
+                <div class="film-card" data-title="Agak Laen" data-genre="komedi,horor" data-year="2024">
+                    <div class="poster">
+                        <img src="agak-laen.jpg" alt="Poster Agak Laen">
+                    </div>
+                    <div class="film-info">
+                        <h3>Agak Laen</h3>
+                        <p>Komedi • Horor</p>
+                        <span>⭐ 7.4/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 3 -->
+                <div class="film-card" data-title="One Piece" data-genre="animasi,petualangan" data-year="1999">
+                    <div class="poster">
+                        <img src="one-piece.jpg" alt="Poster One Piece">
+                    </div>
+                    <div class="film-info">
+                        <h3>One Piece</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 9.0/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 4 -->
+                <div class="film-card" data-title="The Conjuring" data-genre="horor,misteri" data-year="2013">
+                    <div class="poster">
+                        <img src="the-conjuring.jpg" alt="Poster The Conjuring">
+                    </div>
+                    <div class="film-info">
+                        <h3>The Conjuring</h3>
+                        <p>Horor • Misteri</p>
+                        <span>⭐ 7.5/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 5 -->
+                <div class="film-card" data-title="Moana" data-genre="animasi,petualangan" data-year="2016">
+                    <div class="poster">
+                        <img src="moana.jpg" alt="Poster Moana">
+                    </div>
+                    <div class="film-info">
+                        <h3>Moana</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 7.6/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 6 -->
+                <div class="film-card" data-title="My Beautiful Bride" data-genre="misteri" data-year="2015">
+                    <div class="poster">
+                        <img src="my-beautiful-bride.jpg" alt="Poster My Beautiful Bride">
+                    </div>
+                    <div class="film-info">
+                        <h3>My Beautiful Bride</h3>
+                        <p>Misteri • Aksi</p>
+                        <span>⭐ 7.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 7 -->
+                <div class="film-card" data-title="Insidious" data-genre="horor" data-year="2010">
+                    <div class="poster">
+                        <img src="insidious.jpg" alt="Poster Insidious">
+                    </div>
+                    <div class="film-info">
+                        <h3>Insidious</h3>
+                        <p>Horor • Supranatural</p>
+                        <span>⭐ 6.8/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 8 -->
+                <div class="film-card" data-title="Sumala" data-genre="horor,misteri" data-year="2024">
+                    <div class="poster">
+                        <img src="sumala.jpg" alt="Poster Sumala">
+                    </div>
+                    <div class="film-info">
+                        <h3>Sumala</h3>
+                        <p>Horor • Misteri</p>
+                        <span>⭐ 5.8/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 9 -->
+                <div class="film-card" data-title="Ratatouille" data-genre="animasi,komedi" data-year="2007">
+                    <div class="poster">
+                        <img src="ratatouille.jpg" alt="Poster Ratatouille">
+                    </div>
+                    <div class="film-info">
+                        <h3>Ratatouille</h3>
+                        <p>Animasi • Komedi</p>
+                        <span>⭐ 8.1/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 10 -->
+                <div class="film-card" data-title="Teach You a Lesson" data-genre="aksi" data-year="2026">
+                    <div class="poster">
+                        <img src="teach-you-a-lesson.jpg" alt="Poster Teach You a Lesson">
+                    </div>
+                    <div class="film-info">
+                        <h3>Teach You a Lesson</h3>
+                        <p>Aksi • Drama Kriminal</p>
+                        <span>⭐ 8.4/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 11 -->
+                <div class="film-card" data-title="Zootopia" data-genre="animasi" data-year="2016">
+                    <div class="poster">
+                        <img src="zootopia.jpg" alt="Poster Zootopia">
+                    </div>
+                    <div class="film-info">
+                        <h3>Zootopia</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 8.0/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 12 -->
+                <div class="film-card" data-title="Kang Mak x Nenek Gayung" data-genre="horor,komedi" data-year="2025">
+                    <div class="poster">
+                        <img src="kang-mak-x-nenek-gayung.jpg" alt="Poster Kang Mak x Nenek Gayung">
+                    </div>
+                    <div class="film-info">
+                        <h3>Kang Mak x Nenek Gayung</h3>
+                        <p>Horor • Komedi</p>
+                        <span>⭐ 6.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 13 -->
+                <div class="film-card" data-title="Ice Cream Man" data-genre="horor,komedi" data-year="1995">
+                    <div class="poster">
+                        <img src="ice-cream-man.jpg" alt="Poster Ice Cream Man">
+                    </div>
+                    <div class="film-info">
+                        <h3>Ice Cream Man</h3>
+                        <p>Horor • Komedi</p>
+                        <span>⭐ 4.9/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 14 -->
+                <div class="film-card" data-title="Encanto" data-genre="animasi" data-year="2021">
+                    <div class="poster">
+                        <img src="encanto.jpg" alt="Poster Encanto">
+                    </div>
+                    <div class="film-info">
+                        <h3>Encanto</h3>
+                        <p>Animasi • Fantasi</p>
+                        <span>⭐ 7.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 15 -->
+                <div class="film-card" data-title="The King : Eternal Monarch" data-genre="romansa" data-year="2020">
+                    <div class="poster">
+                        <img src="the-king-eternal-monarch.jpg" alt="Poster The King Eternal Monarch">
+                    </div>
+                    <div class="film-info">
+                        <h3>The King : Eternal Monarch</h3>
+                        <p>Romansa • Fantasi</p>
+                        <span>⭐ 8.1/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 16 -->
+                <div class="film-card" data-title="Sekawan Limo" data-genre="horor,komedi" data-year="2024">
+                    <div class="poster">
+                        <img src="sekawan-limo.jpg" alt="Poster Sekawan Limo">
+                    </div>
+                    <div class="film-info">
+                        <h3>Sekawan Limo</h3>
+                        <p>Horor • Komedi</p>
+                        <span>⭐ 6.7/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 17 -->
+                <div class="film-card" data-title="Bolt" data-genre="animasi" data-year="2008">
+                    <div class="poster">
+                        <img src="bolt.jpg" alt="Poster Bolt">
+                    </div>
+                    <div class="film-info">
+                        <h3>Bolt</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 6.8/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 18 -->
+                <div class="film-card" data-title="The Batman" data-genre="aksi" data-year="2022">
+                    <div class="poster">
+                        <img src="batman.jpg" alt="Poster The Batman">
+                    </div>
+                    <div class="film-info">
+                        <h3>The Batman</h3>
+                        <p>Aksi • Kriminal</p>
+                        <span>⭐ 7.8/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 19 -->
+                <div class="film-card" data-title="Final Destination" data-genre="horor" data-year="2000">
+                    <div class="poster">
+                        <img src="final-destination.jpg" alt="Poster Final Destination">
+                    </div>
+                    <div class="film-info">
+                        <h3>Final Destination</h3>
+                        <p>Horor • Thriller</p>
+                        <span>⭐ 6.7/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 20 -->
+                <div class="film-card" data-title="The Good Dinosaur" data-genre="animasi" data-year="2015">
+                    <div class="poster">
+                        <img src="the-good-dinosaur.jpg" alt="Poster The Good Dinosaur">
+                    </div>
+                    <div class="film-info">
+                        <h3>The Good Dinosaur</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 6.7/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 21 -->
+                <div class="film-card" data-title="Inside Out" data-genre="animasi,komedi" data-year="2015">
+                    <div class="poster">
+                        <img src="inside-out.jpg" alt="Poster Inside Out">
+                    </div>
+                    <div class="film-info">
+                        <h3>Inside Out</h3>
+                        <p>Animasi • Komedi</p>
+                        <span>⭐ 8.1/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 22 -->
+                <div class="film-card" data-title="The Medium" data-genre="horor" data-year="2021">
+                    <div class="poster">
+                        <img src="the-medium.jpg" alt="Poster The Medium">
+                    </div>
+                    <div class="film-info">
+                        <h3>The Medium</h3>
+                        <p>Horor</p>
+                        <span>⭐ 6.5/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 23 -->
+                <div class="film-card" data-title="Petaka Gunung Gede" data-genre="horor" data-year="2025">
+                    <div class="poster">
+                        <img src="petaka-gunung-gede.jpg" alt="Poster Petaka Gunung Gede">
+                    </div>
+                    <div class="film-info">
+                        <h3>Petaka Gunung Gede</h3>
+                        <p>Horor • Petualangan</p>
+                        <span>⭐ 6.5/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 24 -->
+                <div class="film-card" data-title="Toy Story" data-genre="animasi,komedi" data-year="1995">
+                    <div class="poster">
+                        <img src="toy-strory.jpg" alt="Poster Toy Story">
+                    </div>
+                    <div class="film-info">
+                        <h3>Toy Story</h3>
+                        <p>Animasi • Komedi</p>
+                        <span>⭐ 8.3/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 25 -->
+                <div class="film-card" data-title="Up" data-genre="animasi" data-year="2009">
+                    <div class="poster">
+                        <img src="up.jpg" alt="Poster Up">
+                    </div>
+                    <div class="film-info">
+                        <h3>Up</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 8.3/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 26 -->
+                <div class="film-card" data-title="Midsommar" data-genre="horor" data-year="2019">
+                    <div class="poster">
+                        <img src="midsommar.jpg" alt="Poster Midsommar">
+                    </div>
+                    <div class="film-info">
+                        <h3>Midsommar</h3>
+                        <p>Horor • Psikologis</p>
+                        <span>⭐ 7.1/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 27 -->
+                <div class="film-card" data-title="Finding Nemo" data-genre="animasi" data-year="2003">
+                    <div class="poster">
+                        <img src="finding-nemo.jpg" alt="Poster Finding Nemo">
+                    </div>
+                    <div class="film-info">
+                        <h3>Finding Nemo</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 8.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 28 -->
+                <div class="film-card" data-title="Spider-Man : Into the Spider-Verse" data-genre="aksi,animasi" data-year="2018">
+                    <div class="poster">
+                        <img src="spider-man-into-the-spider-verse.jpg" alt="Poster Spider-Man Into the Spider-Verse">
+                    </div>
+                    <div class="film-info">
+                        <h3>Spider-Man : Into the Spider-Verse</h3>
+                        <p>Aksi • Animasi</p>
+                        <span>⭐ 8.4/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 29 -->
+                <div class="film-card" data-title="Mencuri Raden Saleh" data-genre="aksi" data-year="2022">
+                    <div class="poster">
+                        <img src="mencuri-raden-saleh.jpg" alt="Poster Mencuri Raden Saleh">
+                    </div>
+                    <div class="film-info">
+                        <h3>Mencuri Raden Saleh</h3>
+                        <p>Aksi • Kriminal</p>
+                        <span>⭐ 7.3/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 30 -->
+                <div class="film-card" data-title="Filpped" data-genre="romansa,komedi" data-year="2010">
+                    <div class="poster">
+                        <img src="filpped.jpg" alt="Poster Filpped">
+                    </div>
+                    <div class="film-info">
+                        <h3>Filpped</h3>
+                        <p>Romansa • Komedi</p>
+                        <span>⭐ 7.7/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 31 -->
+                <div class="film-card" data-title="Rio" data-genre="animasi,komedi" data-year="2011">
+                    <div class="poster">
+                        <img src="rio.jpg" alt="Poster Rio">
+                    </div>
+                    <div class="film-info">
+                        <h3>Rio</h3>
+                        <p>Animasi • Komedi</p>
+                        <span>⭐ 6.9/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 32 -->
+                <div class="film-card" data-title="Evil Dead Rise" data-genre="horor" data-year="2023">
+                    <div class="poster">
+                        <img src="evil-dead-rise.jpg" alt="Poster Evil Dead Rise">
+                    </div>
+                    <div class="film-info">
+                        <h3>Evil Dead Rise</h3>
+                        <p>Horor • Supranatural</p>
+                        <span>⭐ 6.5/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 33 -->
+                <div class="film-card" data-title="Sri Asih" data-genre="aksi" data-year="2022">
+                    <div class="poster">
+                        <img src="sri-asih.jpg" alt="Poster Sri Asih">
+                    </div>
+                    <div class="film-info">
+                        <h3>Sri Asih</h3>
+                        <p>Aksi • Fantasi</p>
+                        <span>⭐ 6.1/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 34 -->
+                <div class="film-card" data-title="The Human Centipede" data-genre="horor" data-year="2009">
+                    <div class="poster">
+                        <img src="the-human-centipede.jpg" alt="Poster The Human Centipede">
+                    </div>
+                    <div class="film-info">
+                        <h3>The Human Centipede</h3>
+                        <p>Horor • Thriller Psikologis</p>
+                        <span>⭐ 4.4/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 35 -->
+                <div class="film-card" data-title="Despicable Me" data-genre="animasi,komedi" data-year="2010">
+                    <div class="poster">
+                        <img src="despicable-me.jpg" alt="Poster Despicable Me">
+                    </div>
+                    <div class="film-info">
+                        <h3>Despicable Me</h3>
+                        <p>Animasi • Komedi</p>
+                        <span>⭐ 7.6/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 36 -->
+                <div class="film-card" data-title="Cek Toko Sebelah" data-genre="komedi" data-year="2016">
+                    <div class="poster">
+                        <img src="cek-toko-sebelah.jpg" alt="Poster Cek Toko Sebelah">
+                    </div>
+                    <div class="film-info">
+                        <h3>Cek Toko Sebelah</h3>
+                        <p>Komedi • Drama</p>
+                        <span>⭐ 7.8/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 37 -->
+                <div class="film-card" data-title="One Missed Call" data-genre="horor,misteri" data-year="2003">
+                    <div class="poster">
+                        <img src="one-missed-call.jpg" alt="Poster One Missed Call">
+                    </div>
+                    <div class="film-info">
+                        <h3>One Missed Call</h3>
+                        <p>Horor • Misteri</p>
+                        <span>⭐ 6.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 38 -->
+                <div class="film-card" data-title="Cars" data-genre="animasi" data-year="2006">
+                    <div class="poster">
+                        <img src="cars.jpg" alt="Poster Cars">
+                    </div>
+                    <div class="film-info">
+                        <h3>Cars</h3>
+                        <p>Animasi • Petualangan</p>
+                        <span>⭐ 7.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 39 -->
+                <div class="film-card" data-title="Elemental" data-genre="animasi" data-year="2023">
+                    <div class="poster">
+                        <img src="elemental.jpg" alt="Poster Elemental">
+                    </div>
+                    <div class="film-info">
+                        <h3>Elemental</h3>
+                        <p>Animasi • Fantasi</p>
+                        <span>⭐ 7.0/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 40 -->
+                <div class="film-card" data-title="Tusk" data-genre="horor" data-year="2014">
+                    <div class="poster">
+                        <img src="tusk.jpg" alt="Poster Tusk">
+                    </div>
+                    <div class="film-info">
+                        <h3>Tusk</h3>
+                        <p>Horor • Komedi Gelap</p>
+                        <span>⭐ 5.4/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 41 -->
+                <div class="film-card" data-title="Sore : Istri dari Masa Depan" data-genre="romansa" data-year="2025">
+                    <div class="poster">
+                        <img src="sore.jpg" alt="Poster Sore Istri dari Masa Depan">
+                    </div>
+                    <div class="film-info">
+                        <h3>Sore : Istri dari Masa Depan</h3>
+                        <p>Romansa • Fantasi</p>
+                        <span>⭐ 7.4/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 42 -->
+                <div class="film-card" data-title="Home Alone" data-genre="komedi" data-year="1990">
+                    <div class="poster">
+                        <img src="home-alone.jpg" alt="Poster Home Alone">
+                    </div>
+                    <div class="film-info">
+                        <h3>Home Alone</h3>
+                        <p>Komedi • Keluarga</p>
+                        <span>⭐ 7.7/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 43 -->
+                <div class="film-card" data-title="Monsters, Int" data-genre="animasi,komedi" data-year="2001">
+                    <div class="poster">
+                        <img src="monsters-int.jpg" alt="Poster Monsters Inc">
+                    </div>
+                    <div class="film-info">
+                        <h3>Monsters, Int</h3>
+                        <p>Animasi • Komedi</p>
+                        <span>⭐ 8.1/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 44 -->
+                <div class="film-card" data-title="Waktu Maghrib" data-genre="horor" data-year="2023">
+                    <div class="poster">
+                        <img src="waktu-maghrib.jpg" alt="Poster Waktu Maghrib">
+                    </div>
+                    <div class="film-info">
+                        <h3>Waktu Maghrib</h3>
+                        <p>Horor • Supranatural</p>
+                        <span>⭐ 6.0/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 45 -->
+                <div class="film-card" data-title="Knives Out" data-genre="misteri" data-year="2019">
+                    <div class="poster">
+                        <img src="knives-out.jpg" alt="Poster Knives Out">
+                    </div>
+                    <div class="film-info">
+                        <h3>Knives Out</h3>
+                        <p>Misteri • Kriminal</p>
+                        <span>⭐ 7.9/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 46 -->
+                <div class="film-card" data-title="Ada Apa dengan Cinta" data-genre="romansa" data-year="2002">
+                    <div class="poster">
+                        <img src="ada-apa-dengan-cinta.jpg" alt="Poster Ada Apa dengan Cinta">
+                    </div>
+                    <div class="film-info">
+                        <h3>Ada Apa dengan Cinta</h3>
+                        <p>Romansa • Drama</p>
+                        <span>⭐ 7.7/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 47 -->
+                <div class="film-card" data-title="Enola Holmes" data-genre="misteri" data-year="2020">
+                    <div class="poster">
+                        <img src="enola-holmes.jpg" alt="Poster Enola Holmes">
+                    </div>
+                    <div class="film-info">
+                        <h3>Enola Holmes</h3>
+                        <p>Misteri • Petualangan</p>
+                        <span>⭐ 6.6/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 48 -->
+                <div class="film-card" data-title="Agak Laen : Menyala Pantiku!" data-genre="komedi,misteri" data-year="2025">
+                    <div class="poster">
+                        <img src="menyala-pantiku.jpg" alt="Poster Agak Laen Menyala Pantiku">
+                    </div>
+                    <div class="film-info">
+                        <h3>Agak Laen : Menyala Pantiku!</h3>
+                        <p>Komedi • Misteri</p>
+                        <span>⭐ 8.3/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 49 -->
+                <div class="film-card" data-title="Top Gun : Maverick" data-genre="aksi" data-year="2022">
+                    <div class="poster">
+                        <img src="maverick.jpg" alt="Poster Top Gun Maverick">
+                    </div>
+                    <div class="film-info">
+                        <h3>Top Gun : Maverick</h3>
+                        <p>Aksi • Drama</p>
+                        <span>⭐ 8.2/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 50 -->
+                <div class="film-card" data-title="A Little Thing Called Love" data-genre="romansa,komedi" data-year="2010">
+                    <div class="poster">
+                        <img src="a-little-thing-called-love.jpg" alt="Poster A Little Thing Called Love">
+                    </div>
+                    <div class="film-info">
+                        <h3>A Little Thing Called Love</h3>
+                        <p>Romansa • Komedi</p>
+                        <span>⭐ 7.8/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 51 -->
+                <div class="film-card" data-title="Searching" data-genre="misteri" data-year="2018">
+                    <div class="poster">
+                        <img src="searching.jpg" alt="Poster Searching">
+                    </div>
+                    <div class="film-info">
+                        <h3>Searching</h3>
+                        <p>Misteri • Thriller</p>
+                        <span>⭐ 7.6/10</span>
+                    </div>
+                </div>
+
+                <!-- FILM 52 -->
+                <div class="film-card" data-title="10 Things I Hate About You" data-genre="romansa,komedi" data-year="1999">
+                    <div class="poster">
+                        <img src="10-things-i-hate-about-you.jpg" alt="Poster 10 Things I Hate About You">
+                    </div>
+                    <div class="film-info">
+                        <h3>10 Things I Hate About You</h3>
+                        <p>Romansa • Komedi</p>
+                        <span>⭐ 7.3/10</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="notFound" class="not-found">
+                Film tidak ditemukan 😜
+            </p>
+
+        </section>
+
+
+        <!-- TENTANG -->
+        <section class="about" id="about">
+
+            <h2>Tentang Rekomendasi Film</h2>
+
+            <p>
+                Website ini untuk kamu yang lagi bingung mau nonton film apa. Di sini, kamu bisa menemukan berbagai pilihan film dari beragam genre, mulai dari aksi, komedi, romantis, animasi, horor, sampai mmisteri.
+                Kamu juga bisa mencari film berdasarkan judul, melihat sinopsisnya, dan menemukan rekomendasi tontonan yang menarik. Jadi, nggak perlu bingung lagi mencari film untuk mengisi waktu luang.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 FilmKu | Website Rekomendasi Film</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
